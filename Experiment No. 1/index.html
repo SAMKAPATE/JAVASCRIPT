@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Practical 1</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    margin-top:50px;
+}
+
+.container{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px lightgray;
+}
+
+button{
+    padding:10px 20px;
+    margin:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#output{
+    margin-top:20px;
+    text-align:left;
+}
+</style>
+
+<!-- Internal JavaScript -->
+<script>
+function welcomeMessage(){
+    alert("Welcome to JavaScript Practical!");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>JavaScript Practical No. 1</h1>
+
+<p>Demonstration of Inline, Internal and External JavaScript</p>
+
+<!-- Inline JavaScript -->
+<button onclick="welcomeMessage()">
+Show Welcome Message
+</button>
+
+<button onclick="showEnvironment()">
+Show Environment Information
+</button>
+
+<div id="output"></div>
+
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
